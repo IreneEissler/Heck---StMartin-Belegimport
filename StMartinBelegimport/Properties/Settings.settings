@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="StMartinBelegimport.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BelegPfadFTP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftp://stmartinsapotheke.eu/webios/_data/_stmartinsapotheke.eu/_export/_asc/</Value>
+    </Setting>
+    <Setting Name="ArtikelPfadFTP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftp://stmartinsapotheke.eu/webios/_data/_stmartinsapotheke.eu/_import/_asc/</Value>
+    </Setting>
+    <Setting Name="BelegPfadLokal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Kunden\Heck\Export</Value>
+    </Setting>
+    <Setting Name="ArtikelPfadLokal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Kunden\Heck\Export</Value>
+    </Setting>
+    <Setting Name="Datenbank" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OLDemoReweAbfD</Value>
+    </Setting>
+    <Setting Name="Mandant" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">123</Value>
+    </Setting>
+    <Setting Name="OLBenutzer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Sage</Value>
+    </Setting>
+    <Setting Name="OLKennwort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IntervallExport" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="LetzterExport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30.05.2013 00:00:00</Value>
+    </Setting>
+    <Setting Name="LetzterImport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30.05.2013 00:00:00</Value>
+    </Setting>
+    <Setting Name="IntervallImport" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="FTPUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">u72892925</Value>
+    </Setting>
+    <Setting Name="FTPKennwort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mvemjsunp9</Value>
+    </Setting>
+    <Setting Name="Debug" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Preisliste" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ExportZeit" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">30.05.02013 20:30:00</Value>
+    </Setting>
+    <Setting Name="LetzteAnmeldung" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">01/01/2018 01:05:00</Value>
+    </Setting>
+    <Setting Name="ABImportAktiv" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="RechnungsImportAktiv" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ArtikelExportAktiv" Type="System.Int16" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="RechnungsPfadLokal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E:\Kunden\Heck\Export\Rechnungen</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
