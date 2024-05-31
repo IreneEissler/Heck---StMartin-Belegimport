@@ -77,17 +77,24 @@ namespace StMartinBelegimport
 
         private static void OnTimedEvent(object source, ElapsedEventArgs e)
         {
+            aTimer.Stop();
 
+            Action();
 
+            aTimer.Start();
+
+        }
+
+        internal static void Action()
+        {
             try
             {
-                aTimer.Stop();
 
-                if (DateTime.Now >  Properties.Settings.Default.LetzteAnmeldung.AddMinutes(3))
+                if (DateTime.Now > Properties.Settings.Default.LetzteAnmeldung.AddMinutes(3))
                 {
                     //viermal am Tag die Verbindung neu aufbauen.
                     GlobalFcts.disconnectFromOL();
-                    
+
                     Properties.Settings.Default.LetzteAnmeldung = DateTime.Now;
                 }
 
@@ -121,8 +128,8 @@ namespace StMartinBelegimport
                 // Export Artikel
                 if (Convert.ToDateTime(Properties.Settings.Default.LetzterExport).AddMinutes(Properties.Settings.Default.IntervallExport) < DateTime.Now && Properties.Settings.Default.ArtikelExportAktiv == 1)
                 {
-                   
-                   GlobalFcts.connectToOL();
+
+                    GlobalFcts.connectToOL();
                     if (GlobalFcts.mandant != null)
                     {
                         ArtikelFcts.ArtikelExport();
@@ -132,7 +139,7 @@ namespace StMartinBelegimport
                     }
                 }
 
-                aTimer.Start();
+
             }
             catch (Exception ex)
             {
@@ -141,7 +148,6 @@ namespace StMartinBelegimport
                 GlobalFcts.goSession = null;
                 aTimer.Start();
             }
-
         }
 
         protected override void OnStop()

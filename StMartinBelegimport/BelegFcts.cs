@@ -7,12 +7,10 @@ using System.Data.SqlClient;
 using Sagede.OfficeLine.Wawi.BelegEngine;
 using Sagede.OfficeLine.Wawi.Tools;
 
-
 namespace StMartinBelegimport
 {
     class BelegFcts
     {
-
         public static void BelegImport()
         {
             string returnvalue;

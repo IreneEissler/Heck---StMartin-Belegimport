@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
+using System.Windows.Forms;
 
 namespace StMartinBelegimport
 {
@@ -13,12 +14,25 @@ namespace StMartinBelegimport
         /// </summary>
         static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[] 
-			{ 
-				new Belegimport() 
-			};
-            ServiceBase.Run(ServicesToRun);
+
+            if (!System.Environment.UserInteractive)
+            {
+                ServiceBase[] ServicesToRun;
+                ServicesToRun = new ServiceBase[]
+                {
+                new Belegimport()
+                };
+                ServiceBase.Run(ServicesToRun);
+            }
+            else // Formular starten
+            {
+
+                System.Windows.Forms.Application.EnableVisualStyles();
+                System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+                System.Windows.Forms.Application.Run(new Test());
+
+            }
+
         }
     }
 }

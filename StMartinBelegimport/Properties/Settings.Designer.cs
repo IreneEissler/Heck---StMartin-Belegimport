@@ -25,7 +25,7 @@ namespace StMartinBelegimport.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ftp://stmartinsapotheke.eu/webios/_data/_stmartinsapotheke.eu/_export/_asc/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string BelegPfadFTP {
             get {
                 return ((string)(this["BelegPfadFTP"]));
@@ -34,7 +34,7 @@ namespace StMartinBelegimport.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ftp://stmartinsapotheke.eu/webios/_data/_stmartinsapotheke.eu/_import/_asc/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string ArtikelPfadFTP {
             get {
                 return ((string)(this["ArtikelPfadFTP"]));
@@ -61,7 +61,7 @@ namespace StMartinBelegimport.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("OLDemoReweAbfD")]
+        [global::System.Configuration.DefaultSettingValueAttribute("StMartin")]
         public string Datenbank {
             get {
                 return ((string)(this["Datenbank"]));
@@ -70,7 +70,7 @@ namespace StMartinBelegimport.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public short Mandant {
             get {
                 return ((short)(this["Mandant"]));
@@ -106,7 +106,7 @@ namespace StMartinBelegimport.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("30.05.2013 00:00:00")]
+        [global::System.Configuration.DefaultSettingValueAttribute("30.05.2024 00:00:00")]
         public string LetzterExport {
             get {
                 return ((string)(this["LetzterExport"]));
@@ -118,7 +118,7 @@ namespace StMartinBelegimport.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("30.05.2013 00:00:00")]
+        [global::System.Configuration.DefaultSettingValueAttribute("30.05.2024 00:00:00")]
         public string LetzterImport {
             get {
                 return ((string)(this["LetzterImport"]));
@@ -221,15 +221,30 @@ namespace StMartinBelegimport.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("E:\\Kunden\\Heck\\Export\\Rechnungen")]
         public string RechnungsPfadLokal {
             get {
                 return ((string)(this["RechnungsPfadLokal"]));
             }
-            set {
-                this["RechnungsPfadLokal"] = value;
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Prokas Ausbuchung")]
+        public string Buchungstext {
+            get {
+                return ((string)(this["Buchungstext"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("S12000")]
+        public string SachkontoAusbuchung {
+            get {
+                return ((string)(this["SachkontoAusbuchung"]));
             }
         }
     }
