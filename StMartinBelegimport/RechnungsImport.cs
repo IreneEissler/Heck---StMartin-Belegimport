@@ -133,7 +133,7 @@ namespace StMartinBelegimport
                             return "Beleg " + Belegnummer + " wurde bereits eingelesen";
                         }
                         beleg = new Beleg(GlobalFcts.mandant, Erfassungsart.Verkauf);
-                        beleg.Initialize("VSD", Convert.ToDateTime(BelegDatum), Convert.ToInt16(Convert.ToDateTime(BelegDatum).Year));
+                        beleg.Initialize("VSD", Convert.ToDateTime(BelegDatum), (short)GlobalFcts.mandant.PeriodenManager.Perioden.Date2Periode(Convert.ToDateTime(BelegDatum)).Jahr);
                         if (beleg.Errors.NumberOfErrors > 0)
                         {
                             GlobalFcts.writeLog("Fehler beim Initialisieren der Rechnung: " + beleg.Errors.GetDescriptionSummary());
